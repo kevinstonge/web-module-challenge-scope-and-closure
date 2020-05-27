@@ -42,6 +42,8 @@ Find the file `index.js` and complete the tasks.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+    Closure means that the code within a function block has access to functions and variables declared outside of that function block (at a higher nesting level).
+
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -63,9 +65,14 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+    the returned function in personalDice references the 'name' variable which is not declared within the nested function, but is available in the parent function via the parameter/argument passed into the function. You can tell this is an example of closure because a nested function is accessing a value outside of it's own code block.
 
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  Each time dansRoll is called, personalDice is called with the parameter "Dan", so each time it is called, the name value will always be "Dan", but the randomized value of newRoll will be different.
+
+c. What is the lexical scope of `newRoll`? 
+    newRoll is only accessible from within the function returned by the personalDice() function.
+    
 ### Task 3 - Stretch Goals
 
 After you have completed the requirements, **create** a new file called `stretch.js` and practice more with closures. There are no tests for these problems.
