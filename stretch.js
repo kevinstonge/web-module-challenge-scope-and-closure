@@ -59,4 +59,14 @@ var addSix = createBase(6);
 console.log(addSix(10));
 
 //3. Research the differences between functional programming and object oriented programming. Then, describe the pros and cons of functional programming vs object-oriented programming. This is a common interview question and great practice!
+/*
+functional programming is code made up of multiple functions that manipulate data in various ways. OOP is a way to add more structure to code by encapsulating variables and functions inside of objects, with the ability to create instances of objects with their own unique values for their properties, and with the ability to create objects that inherit properties of other objects.
 
+Functional programming is best suited for projects that require a lot of data to be manipulated directly, while OOP is best suited for projects that require a lot of things (objects) to be manipulated and in which those things may logical/natural heirarchical relationships with eaach other (for example, people might be a parent object class, but then students are people, managers are people, etc).
+
+a blogger named "Fogus" (http://blog.fogus.me/2013/07/22/fp-vs-oo-from-the-trenches/) summarized the practical difference as follows:
+
+"Whenever I write some code to deal with data about people then functional programming seems to work best.
+Whenever I write some code to simulate people then object-oriented programming seems3 to work best."
+
+*/
